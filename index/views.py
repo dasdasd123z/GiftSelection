@@ -7,5 +7,3 @@ def index(request):
 
 def select(request):
     return render(request, 'index/select.html')
-def selecthttp(request):
-    return obr(request, obr.py(input_teg))
