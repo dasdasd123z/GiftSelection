@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+	<header>
+		{% block content %}
+		<div class="mainheader">
+			<div class="mainword">
+				<h1>Выберите теги</h1>
+			</div>
+			<div class="firstmenu">
+				<ul>
+					<li><a href="#">Аниме</a></li>
+					<li><a href="#">Фильмы</a></li>
+					<li><a href="#">Компьютерные игры</a></li>
+				</ul>
+			</div>
+			<div class="secondmenu">
+			<form action="/cgi-bin/obr.py">
+				<input type="text" name="teg">
+				<input type="submit">
+				</form>
+			</div>
+		</div>
+		{% endblock %}
+	</header>
+</body>
+</html>
