@@ -10,4 +10,4 @@ if __name__ == '__main__':
         raise ImportError(
             "django not imported"
         ) from exc
-    execute_from_command_line(sys.argv)
+    
